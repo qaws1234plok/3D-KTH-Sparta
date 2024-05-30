@@ -2521,7 +2521,7 @@ MonoBehaviour:
   curValue: 0
   startValue: 100
   maxValue: 100
-  paasiveValue: 0
+  paasiveValue: 5
   uibar: {fileID: 480701180}
 --- !u!1 &525929933
 GameObject:

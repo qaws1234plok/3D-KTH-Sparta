@@ -13,6 +13,7 @@ public class PlayerCondition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        health.Add(health.paasiveValue * Time.deltaTime);
         stamina.Add(stamina.paasiveValue * Time.deltaTime);
     }
 
@@ -20,7 +21,8 @@ public class PlayerCondition : MonoBehaviour
     {
         if (stamina != null)
         {
-            stamina.Subtract(10f); // 10만큼 스태미나 감소 (값은 필요에 따라 조정 가능)
+            health.Subtract(10);
+            stamina.Subtract(10f); 
         }
         else
         {
